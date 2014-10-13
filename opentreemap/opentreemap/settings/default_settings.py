@@ -50,6 +50,7 @@ NEARBY_INSTANCE_RADIUS = 100000
 NEARBY_TREE_DISTANCE = 6.096  # 20ft
 
 DEBUG = True
+
 TEMPLATE_DEBUG = True
 AUTH_USER_MODEL = 'treemap.User'
 INTERNAL_IPS = ['127.0.0.1']
@@ -84,9 +85,19 @@ TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'es'
+LANGUAGE_CODE = 'en'
+
+#LANGUAGES = (
+    #('es', ('Espanol')),
+    #('en', ('English')),
+#)
+
+LOCALE_PATHS = (
+    '/user/local/otm/app/opentreemap/treemap/locale'
+)
 
 SITE_ID = 1
+
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.

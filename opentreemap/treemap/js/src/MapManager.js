@@ -201,7 +201,7 @@ function getLayerURL(config, layer, extension) {
     var host = config.tileHost || '';
     return host + '/tile/' +
         config.instance.rev +
-        '/database/otm/table/' + layer + '/{z}/{x}/{y}.' +
+        '/database/otmrosario/table/' + layer + '/{z}/{x}/{y}.' +
         extension + '?instance_id=' + config.instance.id;
 }
 
